@@ -1,0 +1,29 @@
+[
+  {
+    "bindings": {
+      "cmd-t": "terminal_panel::Toggle",
+      "cmd-i": "workspace::ToggleLeftDock",
+      "cmd-b": "workspace::ToggleRightDock",
+      "alt-cmd-h": "pane::ActivatePreviousItem",
+      "alt-cmd-l": "pane::ActivateNextItem",
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrevious",
+      "shift-cmd-i": "agent::NewExternalAgentThread"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "r": "project_panel::Rename",
+      "a": "project_panel::NewFile"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrevious"
+    }
+  }
+]
