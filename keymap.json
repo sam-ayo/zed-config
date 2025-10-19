@@ -8,14 +8,16 @@
       "alt-cmd-l": "pane::ActivateNextItem",
       "ctrl-j": "menu::SelectNext",
       "ctrl-k": "menu::SelectPrevious",
-      "shift-cmd-i": "agent::NewExternalAgentThread"
+      "shift-cmd-i": "agent::NewExternalAgentThread",
+      "cmd-k": "terminal::Clear"
     }
   },
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "r": "project_panel::Rename",
-      "a": "project_panel::NewFile"
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Delete"
     }
   },
   {
